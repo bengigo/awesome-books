@@ -24,6 +24,7 @@ add.addEventListener('click', () => {
       <p>${book.Title}</p>
       <p>${book.Author}</p>
       <button class="delete">Delete</button>
+      <hr>
       
       `;
 
