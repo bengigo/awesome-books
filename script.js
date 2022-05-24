@@ -55,10 +55,11 @@ class Display {
       const newDiv = document.createElement('div');
       newDiv.classList.add('book');
       newDiv.innerHTML += `
-    <span>"${store.title}" </span><span> by</span><span> ${store.author}</span>
-   
-    <button class="delete">Delete</button>
-  `;
+      <div>
+      <span>"${store.title}" </span><span> by</span><span> ${store.author}</span>
+      </div>
+      <button class="delete">Delete</button>
+    `;
       const list = document.getElementById('book-list');
 
       list.appendChild(newDiv);

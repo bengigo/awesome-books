@@ -1,12 +1,12 @@
-p {
+/* p {
   font-style: normal;
   font-size: 20px;
-}
+} */
 
 .delete {
-  margin: 14px;
+  /* margin: 14px; */
   font-size: 20px;
-  margin-left: 300px;
+  /* margin-left: 300px; */
 }
 
 h1 {
@@ -36,21 +36,25 @@ input {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  outline: solid 2px black;
-  width: 400px;
-  margin-left: calc(65% - 400px);
+  /* border: solid 2px black; */
+  /* width: 400px; */
+  /* margin-left: calc(65% - 400px); */
+  margin: auto;
   box-sizing: content-box;
 }
 #book-list .book:nth-child(odd) {
-  background: gray;
+  background: rgb(218, 218, 218);
 }
 
 
 .book {
-  color: black;
- 
-  width: 400px;
-  
-  
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
 
+h2 {
+  text-align: center;
 }
