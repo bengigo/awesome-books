@@ -1,20 +1,18 @@
-class Books {
+const StoredBooks = [];
+
+class Display {
   constructor(title, author) {
     this.title = title;
     this.author = author;
   }
-}
 
-const StoredBooks = [];
-
-class Display {
   static addtolist() {
     const Title = document.getElementById('title').value;
     const Author = document.getElementById('author').value;
     const list = document.getElementById('book-list');
     const newDiv = document.createElement('div');
     newDiv.classList.add('book');
-    const newbook = new Books(Title, Author);
+    const newbook = new Display(Title, Author);
     StoredBooks.push(newbook);
 
     newDiv.innerHTML += `
