@@ -6,6 +6,7 @@ p {
 .delete {
   margin: 14px;
   font-size: 20px;
+  margin-left: 300px;
 }
 
 h1 {
@@ -25,9 +26,31 @@ input {
   margin-bottom: 10px;
 }
 
+.btn {
+  width: 10%;
+  margin-left: 260px;
+}
+
 #book-list {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  outline: solid 2px black;
+  width: 400px;
+  margin-left: calc(65% - 400px);
+  box-sizing: content-box;
+}
+#book-list .book:nth-child(odd) {
+  background: gray;
+}
+
+
+.book {
+  color: black;
+ 
+  width: 400px;
+  
+  
+
 }
