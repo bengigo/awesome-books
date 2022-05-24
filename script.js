@@ -65,3 +65,20 @@ class Display {
     });
   }
 }
+
+const add = document.getElementById("add");
+
+add.addEventListener("click", function (e) {
+  e.preventDefault();
+  Display.addtolist();
+  Display.addtolocal();
+});
+document.getElementById("book-list").addEventListener("click", function (e) {
+  e.preventDefault();
+  Display.delBook(e);
+  Display.removelocal(e);
+});
+
+window.addEventListener("load", function () {
+  Display.preservelocal();
+});
