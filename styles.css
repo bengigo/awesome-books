@@ -1,17 +1,11 @@
-/* p {
-  font-style: normal;
-  font-size: 20px;
-} */
-
 .delete {
-  /* margin: 14px; */
   font-size: 20px;
-  /* margin-left: 300px; */
   padding: 0 10px;
   -webkit-box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.75);
   box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.75);
   border: 3px solid black;
+  margin-right: 5px;
 }
 
 h1 {
@@ -23,17 +17,13 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items:flex-end;
+  width: 200px;
 }
 
 input {
-  width: 30%;
+  width: 100%;
   margin-bottom: 10px;
-}
-
-.btn {
-  width: 10%;
-  margin-left: 260px;
 }
 
 #book-list {
@@ -41,7 +31,8 @@ input {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: solid 6px black;
+  border: solid 4px black;
+  border-radius: 3px;
   width: 400px;
   margin: auto;
   box-sizing: content-box;
@@ -51,16 +42,41 @@ input {
   background: rgb(218, 218, 218);
 }
 
-
 .book {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* padding: 5px; */
-
 }
 
 h2 {
   text-align: center;
+}
+
+.info {
+  padding: 0 5px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+hr {
+  margin: 20px auto;
+  width: 150px;
+  border: 1px solid black;
+}
+
+button {
+  background-color: white;
+}
+
+.btn {
+  -webkit-box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.75);
+  border: 2px solid black;
+
 }

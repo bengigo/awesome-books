@@ -55,9 +55,8 @@ class Display {
       const newDiv = document.createElement('div');
       newDiv.classList.add('book');
       newDiv.innerHTML += `
-      <div>
-      <p class="">"${store.title}" by ${store.author}</p>
-
+      <div class="info">
+      <p class="line">"${store.title}" by ${store.author}</p>
       </div>
       <button class="delete">Delete</button>
     `;
