@@ -18,7 +18,7 @@ class Display {
     StoredBooks.push(newbook);
 
     newDiv.innerHTML += `
-    <span>" ${newbook.title} " </span><span> by</span><span> ${newbook.author}</span>
+    <span>${newbook.title}</span><span> by</span><span> ${newbook.author}</span>
       <button class="delete">Delete</button>
     `;
 
