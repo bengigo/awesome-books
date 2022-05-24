@@ -56,7 +56,8 @@ class Display {
       newDiv.classList.add('book');
       newDiv.innerHTML += `
       <div>
-      <span>"${store.title}" </span><span> by</span><span> ${store.author}</span>
+      <p class="">"${store.title}" by ${store.author}</p>
+
       </div>
       <button class="delete">Delete</button>
     `;
