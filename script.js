@@ -67,19 +67,19 @@ class Display {
   }
 }
 
-const add = document.getElementById("add");
+const add = document.getElementById('add');
 
-add.addEventListener("click", function (e) {
+add.addEventListener('click', (e) => {
   e.preventDefault();
   Display.addtolist();
   Display.addtolocal();
 });
-document.getElementById("book-list").addEventListener("click", function (e) {
+document.getElementById('book-list').addEventListener('click', (e) => {
   e.preventDefault();
   Display.delBook(e);
   Display.removelocal(e);
 });
 
-window.addEventListener("load", function () {
+window.addEventListener('load', () => {
   Display.preservelocal();
 });

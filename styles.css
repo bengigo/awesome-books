@@ -17,7 +17,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:flex-end;
+  align-items: flex-end;
   width: 200px;
 }
 
@@ -38,15 +38,15 @@ input {
   box-sizing: content-box;
 }
 
-#book-list .book:nth-child(odd) {
-  background: rgb(218, 218, 218);
-}
-
 .book {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+#book-list .book:nth-child(odd) {
+  background: rgb(218, 218, 218);
 }
 
 h2 {
@@ -78,5 +78,4 @@ button {
   -moz-box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.75);
   box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.75);
   border: 2px solid black;
-
 }
