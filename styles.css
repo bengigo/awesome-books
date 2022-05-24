@@ -1,0 +1,10 @@
+.book {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.delete {
+    height: 70%;
+}

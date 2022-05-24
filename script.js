@@ -19,13 +19,12 @@ add.addEventListener('click', () => {
     const list = document.getElementById('book-list');
 
     const newDiv = document.createElement('div');
+    newDiv.classList.add('book');
 
     newDiv.innerHTML += `
-      <p>${book.Title}</p>
-      <p>${book.Author}</p>
-      <button class="delete">Delete</button>
-      <hr>
-      
+        <p>${book.Title}</p>
+        <p>${book.Author}</p>
+      <button class="delete">Delete</button>      
       `;
 
     list.appendChild(newDiv);
