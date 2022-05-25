@@ -16,26 +16,17 @@
 [Live Demo Link](https://livedemo.com) -->
 
 
-<!-- ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+## Getting Started
 
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment -->
-
+- Copy `git@github.com:bengigo/awesome-books.git`
+- Get the directory that you want to clone the repository.
+- Open the command prompt in this directory.
+- Type git clone `git@github.com:bengigo/awesome-books.git`
+- Go to the repository folder in your command prompt `cd  awesome-books`
+- Run npm install to install the dev dependencies for linters and node sass.
 
 
 ## Authors
