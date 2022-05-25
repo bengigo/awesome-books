@@ -11,8 +11,12 @@ class Display {
     const Title = document.getElementById('title').value;
     const Author = document.getElementById('author').value;
 
-    if (Title === '' || Author === '') {
-      document.querySelector('.alert').innerHTML = 'Please add a title and an author';
+    if (Title === '' && Author === '') {
+      document.querySelector('.alert').innerHTML = 'Please add a title and author';
+    } else if (Title === '') {
+      document.querySelector('.alert').innerHTML = 'Please add an title';
+    } else if (Author === '') {
+      document.querySelector('.alert').innerHTML = 'Please add an author';
     } else {
       document.querySelector('.alert').innerHTML = '';
 
