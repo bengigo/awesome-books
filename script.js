@@ -4,6 +4,7 @@ class Display {
   constructor(title, author) {
     this.title = title;
     this.author = author;
+    this.id = Date.now();
   }
 
   static addtolist() {
@@ -17,7 +18,7 @@ class Display {
 
     newDiv.innerHTML += `
     <span>${newbook.title}</span><span> by</span><span> ${newbook.author}</span>
-      <button class="delete">Delete</button>
+      <button id="${newbook.id}" class="delete">Delete</button>
     `;
 
     list.appendChild(newDiv);
