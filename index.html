@@ -9,25 +9,25 @@
   <title>Awesome Books</title>
 </head>
 
-<body>
-  <h1>Awesome Books</h1>
+<body>    
+  <h1>All AwesomeBooks</h1>
 
   <div id="book-list">
   </div>
 
-  <form class="form">
-    <input class="field" type="text" id="title" placeholder="Title">
+  <section class="inputs">
+    <hr>
+    <h2>Add a new book</h2>
+    <div class="alert"></div>
 
-    <input class="field" type="text" id="author" placeholder="Author">
-    <input class="btn" type="submit" value="add-book" id="add">
+    <form id="form" class="form">
+      <input class="field" type="text" id="title" placeholder="Title" required>
+      <input class="field" type="text" id="author" placeholder="Author" required>
+      <button type="submit" id="add" class="btn">Add</button>
 
-  </form>
-
-
-
-
+    </form>
+  </section>
 
   <script src="script.js"></script>
-</body>
 
-</html>
+</body>
