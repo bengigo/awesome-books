@@ -1,3 +1,7 @@
+* {
+  font-family: monospace;
+}
+
 .delete {
   font-size: 20px;
   padding: 0 10px;
@@ -78,4 +82,11 @@ button {
   -moz-box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.75);
   box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.75);
   border: 2px solid black;
+}
+
+.alert {
+  background-color: rgb(218, 218, 218);
+  margin: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
