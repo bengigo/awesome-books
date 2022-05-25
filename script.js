@@ -57,7 +57,7 @@ class Display {
       <div class="info">
       <p class="line">"${store.title}" by ${store.author}</p>
       </div>
-      <button class="delete">Delete</button>
+      <button id="${store.id}" class="delete">Delete</button>
     `;
       const list = document.getElementById('book-list');
 
