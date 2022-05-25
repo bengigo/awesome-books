@@ -40,7 +40,7 @@ class Display {
   static removelocal(e) {
     StoredBooks.forEach((newbook, i) => {
       if (
-        e.target.parentElement.firstElementChild.textContent === newbook.title
+        e.target.parentElement.lastElementChild.textContent === newbook.title
       ) {
         StoredBooks.splice(i, 1);
       }
