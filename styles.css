@@ -45,6 +45,33 @@ nav {
   font-size: 14px;
 }
 
+#list-page {
+  margin-top: 50px;
+}
+
+#book-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: solid 4px black;
+  border-radius: 3px;
+  width: 400px;
+  margin: auto;
+  box-sizing: content-box;
+}
+
+.book {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#book-list .book:nth-child(odd) {
+  background: rgb(218, 218, 218);
+}
+
 
 #add-page {
   display: none;
@@ -90,28 +117,6 @@ input {
   margin-bottom: 10px;
 }
 
-#book-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border: solid 4px black;
-  border-radius: 3px;
-  width: 400px;
-  margin: auto;
-  box-sizing: content-box;
-}
-
-.book {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#book-list .book:nth-child(odd) {
-  background: rgb(218, 218, 218);
-}
 
 h2 {
   text-align: center;
