@@ -3,10 +3,6 @@
   font-weight: bold;
 }
 
-header {
-
-}
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -33,10 +29,10 @@ nav {
 .nav-link {
   text-decoration: none;
   color: black;
-
 }
 
-#item-list, #item-add {
+#item-list,
+#item-add {
   border-right: 2px solid black;
   padding-right: 10px;
 }
@@ -73,7 +69,6 @@ nav {
   background: rgb(218, 218, 218);
 }
 
-
 #add-page {
   display: none;
   margin-top: 40px;
@@ -81,6 +76,7 @@ nav {
 
 h2 {
   font-size: 26px;
+  text-align: center;
 }
 
 #contact-page {
@@ -132,11 +128,6 @@ input {
   margin-bottom: 10px;
 }
 
-
-h2 {
-  text-align: center;
-}
-
 .info {
   padding: 0 5px;
 }
@@ -170,7 +161,6 @@ button {
   padding-left: 8px;
   padding-right: 8px;
 }
-
 
 footer {
   position: fixed;
