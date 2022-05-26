@@ -40,6 +40,10 @@ nav {
   padding-right: 10px;
 }
 
+#date-time {
+  text-align: right;
+  font-size: 14px;
+}
 
 
 #add-page {
