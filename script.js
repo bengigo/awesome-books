@@ -94,9 +94,10 @@ window.addEventListener("load", () => {
 let list = document.getElementById("list");
 let addNew = document.getElementById("add-new");
 let contact = document.getElementById("contact");
-let firstPage = document.getElementById("firstPage");
-let secondPage = document.getElementById("secondPage");
-let thirdPage = document.getElementById("thirdPage");
+let firstPage = document.getElementById("list-page");
+let secondPage = document.getElementById("add-page");
+let thirdPage = document.getElementById("contact-page");
+const dateTime = document.getElementById('date-time');
 
 
 
@@ -121,3 +122,13 @@ list.addEventListener('click', function(){
   thirdPage.style.display = 'none'
   
 })
+
+
+function displayDate() {
+  const currentDate = new Date();
+  dateTime.innerHTML = currentDate;
+}
+
+displayDate();
+
+setInterval(displayDate, 1000);
