@@ -75,6 +75,11 @@ nav {
 
 #add-page {
   display: none;
+  margin-top: 40px;
+}
+
+h2 {
+  font-size: 26px;
 }
 
 #contact-page {
