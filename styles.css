@@ -2,13 +2,14 @@
   font-family: monospace;
 }
 
-#secondPage{
+#add-page {
   display: none;
-  
- 
+
+
 
 }
-#thirdPage{
+
+#contact-page {
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -17,7 +18,7 @@
 }
 
 
-.bg{
+.bg {
   opacity: 0;
   display: none;
 }
@@ -112,3 +113,8 @@ button {
   padding-left: 8px;
   padding-right: 8px;
 }
+
+nav {
+  background-color: pink;
+}
+
