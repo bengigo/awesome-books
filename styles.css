@@ -83,11 +83,25 @@ h2 {
 }
 
 #contact-page {
+  margin-top: 40px;
   display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+.contact-intro {
+  font-size: 16px;
+}
+
+/* .contact-list {
+  list-style-type: none;
+} */
+
+.contact-info {
+  font-size: 16px;
+}
+
 
 .bg {
   opacity: 0;
