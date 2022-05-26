@@ -9,16 +9,36 @@
   <title>Awesome Books</title>
 </head>
 
-<body>    
-  <h1>All AwesomeBooks</h1>
+<body>
+  <p class="alert"></p>
+  <header>
 
-  <div id="book-list">
+    <nav>
+      <div id="logo">Awesome Books</div>
+
+      <ul class="nav-list">
+        <li id="item-list" class="nav-items"><a class="nav-link" href="#" id="list">List</a></li>
+        <li id="item-add" class="nav-items"><a class="nav-link" href="#" id="add-new">Add New</a></li>
+        <li id="item-contact" class="nav-items"><a class="nav-link" href="#" id="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <p id="date-time">DATE AND TIME COMES HERE</p>
+
+
+  </header>
+
+  <div id="list-page">
+    <h1>All Awesome Books</h1>
+
+    <div id="book-list">
+    </div>
+
   </div>
 
-  <section class="inputs">
-    <hr>
+
+  <section class="inputs" id="add-page">
+
     <h2>Add a new book</h2>
-    <div class="alert"></div>
 
     <form id="form" class="form">
       <input class="field" type="text" id="title" placeholder="Title" required>
@@ -27,6 +47,23 @@
 
     </form>
   </section>
+
+  <section id="contact-page">
+    <h2>Contact Information</h2>
+    <p class="contact-intro">Do you have any questions or do you just want to say "Hello"? <br>You can reach out to us!</p>
+
+    <ul class="contact-list">
+      <li class="contact-info">Our e-mail awesomebooks@gmail.com</li>
+      <li class="contact-info">Our phone number 011192021190</li>
+      <li class="contact-info">Our address: Who Knows Where 22, 84503 City, Country</li>
+    </ul>
+
+  </section>
+
+
+  <footer>
+    <p class="footer-text">COPYRIGHT...</p>
+  </footer>
 
   <script src="script.js"></script>
 

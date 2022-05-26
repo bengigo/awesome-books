@@ -2,7 +2,7 @@
 
 # Awesome Books
 
-> Pupose of this project is to create a list of book collection on a simple website.
+> Purpose of this project is to create a list of book collection on a single page website.
 
 
 ## Built With

@@ -11,12 +11,8 @@ class Display {
     const Title = document.getElementById('title').value;
     const Author = document.getElementById('author').value;
 
-    if (Title === '' && Author === '') {
-      document.querySelector('.alert').innerHTML = 'Please add a title and author';
-    } else if (Title === '') {
-      document.querySelector('.alert').innerHTML = 'Please add an title';
-    } else if (Author === '') {
-      document.querySelector('.alert').innerHTML = 'Please add an author';
+    if (Title === '' || Author === '') {
+      document.querySelector('.alert').innerHTML = 'Please add a title and an author';
     } else {
       document.querySelector('.alert').innerHTML = '';
 
@@ -84,6 +80,7 @@ add.addEventListener('click', (e) => {
   Display.addtolist();
   Display.addtolocal();
 });
+
 document.getElementById('book-list').addEventListener('click', (e) => {
   e.preventDefault();
   Display.delBook(e);
@@ -93,3 +90,38 @@ document.getElementById('book-list').addEventListener('click', (e) => {
 window.addEventListener('load', () => {
   Display.preservelocal();
 });
+
+const list = document.getElementById('list');
+const addNew = document.getElementById('add-new');
+const contact = document.getElementById('contact');
+const firstPage = document.getElementById('list-page');
+const secondPage = document.getElementById('add-page');
+const thirdPage = document.getElementById('contact-page');
+const dateTime = document.getElementById('date-time');
+
+addNew.addEventListener('click', () => {
+  secondPage.style.display = 'flex';
+  firstPage.style.display = 'none';
+  thirdPage.style.display = 'none';
+});
+
+contact.addEventListener('click', () => {
+  thirdPage.style.display = 'flex';
+  secondPage.style.display = 'none';
+  firstPage.style.display = 'none';
+});
+
+list.addEventListener('click', () => {
+  firstPage.style.display = 'block';
+  secondPage.style.display = 'none';
+  thirdPage.style.display = 'none';
+});
+
+function displayDate() {
+  const currentDate = new Date();
+  dateTime.innerHTML = currentDate;
+}
+
+displayDate();
+
+setInterval(displayDate, 1000);
