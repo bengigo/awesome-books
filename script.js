@@ -12,15 +12,10 @@ class Display {
     const Author = document.getElementById("author").value;
 
     if (Title == "" || Author == "") {
-      document.querySelector('.alert').innerHTML='Please add a title and an author'
-
-
-      
-    } 
-  
-    else {
-      document.querySelector('.alert').innerHTML = ''
-
+      document.querySelector(".alert").innerHTML =
+        "Please add a title and an author";
+    } else {
+      document.querySelector(".alert").innerHTML = "";
 
       const list = document.getElementById("book-list");
       const newDiv = document.createElement("div");
@@ -95,3 +90,34 @@ document.getElementById("book-list").addEventListener("click", (e) => {
 window.addEventListener("load", () => {
   Display.preservelocal();
 });
+
+let list = document.getElementById("list");
+let addNew = document.getElementById("add-new");
+let contact = document.getElementById("contact");
+let firstPage = document.getElementById("firstPage");
+let secondPage = document.getElementById("secondPage");
+let thirdPage = document.getElementById("thirdPage");
+
+
+
+addNew.addEventListener("click", function () {
+  secondPage.style.display = 'flex'
+  firstPage.style.display = 'none'
+  thirdPage.style.display= 'none'
+
+
+  
+});
+contact.addEventListener("click", function () {
+  thirdPage.style.display = 'flex'
+  secondPage.style.display= 'none'
+ firstPage.style.display= 'none'
+ 
+  
+});
+list.addEventListener('click', function(){
+  firstPage.style.display = 'block'
+  secondPage.style.display = 'none'
+  thirdPage.style.display = 'none'
+  
+})

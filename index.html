@@ -9,21 +9,27 @@
   <title>Awesome Books</title>
 </head>
 
-<body>    
+<body>  
+  <p class="alert"></p>  
   <nav>
     <h3>Awesome books</h3>
 
-    <a href="#">list</a>
-    <a href="#">add new</a>
-    <a href="#">Contact</a>
+    <a href="#" id="list">list</a>
+    <a href="#" id="add-new">add new</a>
+    <a href="#" id="contact">Contact</a>
   </nav>
-  <h1>All AwesomeBooks</h1>
+  <div id="firstPage">
+    <h1>All AwesomeBooks</h1>
 
-  <div id="book-list">
-  </div>
-
-  <section class="inputs">
+    <div id="book-list">
+    </div>
     <hr>
+
+  </div>
+ 
+
+  <section class="inputs" id="secondPage">
+   
     <h2>Add a new book</h2>
 
     <form id="form" class="form">
@@ -34,9 +40,11 @@
     </form>
   </section>
   
-  <footer>
+  <footer id="thirdPage">
     <h3>CONTACT INFORMATION</h3>
     <p>Do you have any questions or do you just want to say "hello"?
+    </p>
+    <p>
       You can reach out to us
     </p>
 
@@ -46,6 +54,8 @@
       <li>Our address anywhere</li>
     </ul>
   </footer>
+
+  <h3>COPYRIGHT</h3>
   <script src="script.js"></script>
 
 </body>

@@ -2,6 +2,27 @@
   font-family: monospace;
 }
 
+#secondPage{
+  display: none;
+  
+ 
+
+}
+#thirdPage{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.bg{
+  opacity: 0;
+  display: none;
+}
+
+
 .delete {
   font-size: 20px;
   padding: 0 10px;
@@ -55,6 +76,7 @@ input {
 
 h2 {
   text-align: center;
+
 }
 
 .info {
